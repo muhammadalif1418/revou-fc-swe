@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sekolah Fotografi</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header-wrapper">
+    <img class="logo" src="image/logo.png" alt="Logo">
+    <div class="menu">
+      <a href="index.html"><button>Beranda</button></a>
+      <a href="profile.html"><button>Profil Kami</button></a>
+      <button>Prestasi</button>
+      <button>Kontak</button>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="main-wrapper">
+    <section>
+      <h1>Hai, <span id="name-header">Internet</span>. Selamat datang di situs web.</h1>
+      <p>Ini adalah situs web latihan pertama.</p>
+    </section>
+
+    <section class="slideshow-section">
+      <img class="img-slideshow" src="https://source.unsplash.com/random/1366x578?landscape&sig=1" alt="Slideshow">
+      <img class="img-slideshow" src="https://source.unsplash.com/random/1366x578?landscape&sig=2" alt="Slideshow">
+      <img class="img-slideshow" src="https://source.unsplash.com/random/1366x578?landscape&sig=3" alt="Slideshow">
+      <button onclick="plusDivs(-1)">Sebelumnya</button>
+      <button onclick="plusDivs(1)">Selanjutnya</button>
+    </section>
+
+    <section class="facilitation-section">
+      <h1>Fasilitas Kami</h1>
+      <div class="facil-list">
+        <div>
+          <img class="facil-img" src="https://source.unsplash.com/random/500x500?landscape&sig=4">
+          <p class="facil-text">Picture</p>
+        </div>
+        <div>
+          <img class="facil-img" src="https://source.unsplash.com/random/500x500?landscape&sig=5">
+          <p class="facil-text">Spot</p>
+        </div>
+        <div>
+          <img class="facil-img" src="https://source.unsplash.com/random/500x500?landscape&sig=6">
+          <p class="facil-text">Vibe</p>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <section class="form-section">
+      <form name="message-form" onsubmit="return validateForm()">
+        Nama:
+        <input type="text" name="full-name" placeholder="Nama">
+        <br>
+
+        Tanggal Lahir:
+        <input type="date" name="birth-date" />
+        <br>
+
+        Jenis Kelamin:
+        <input type="radio" name="gender" id="male" value="Laki-laki">
+        <label for="male">Laki-laki</label>
+        <input type="radio" name="gender" id="female" value="Perempuan">
+        <label for="female">Perempuan</label>
+        <br>
+
+        Pesan:
+        <textarea name="messages" placeholder="Pesan"></textarea>
+        <br>
+
+        <input type="submit" value="Submit">
+      </form>
+
+      <div class="form-output">
+        <p>Nama: <span id="sender-full-name"></span></p>
+        <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+        <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+        <p>Pesan: <span id="sender-messages"></span></p>
+      </div>
+    </section>
+    <hr>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>🔥🔥🔥</p>
+    <hr/>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

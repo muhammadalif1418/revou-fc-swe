@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Header */
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding: 16px 24px;
+}
+
+.header-wrapper > .menu {
+  display: flex;
+}
+
+.header-wrapper > .menu button {
+  background-color: white;
+  padding: 8px 16px;
+  border: 1px solid gray;
+  cursor: pointer;
+  transition: 0.3s background-color ease-out;
+}
+
+.header-wrapper > .menu button:hover {
+  background-color: gainsboro;
+}
+
+.header-wrapper > .menu > button:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.header-wrapper > .menu > button:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+.header-wrapper > .logo {
+  width: auto;
+  height: 40px;
+}
+
+/* Main */
+
+.main-wrapper section {
+  padding: 24px;
+}
+
+.main-wrapper .slideshow-section,
+.facilitation-section {
+  margin-bottom: 30px;
+}
+
+.main-wrapper .form-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+.main-wrapper .form-section form,
+.main-wrapper .form-section div {
+  width: 100%;
+}
+
+.img-slideshow {
+  width: 100%;
+}
+
+.form-output {
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-wrapper {
+    flex-direction: column;
+  }
+
+  .menu {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 14px;
+  }
+}
+
+/* Fasilitas */
+
+.facil-img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+.facil-text {
+  text-align: center;
+}
+
+.facil-list {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+footer p {
+  text-align: right;
+  padding: 10px;
+}
